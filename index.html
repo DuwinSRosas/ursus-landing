@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URSUS — Sistema POS & Facturación para tu Negocio</title>
+    <meta name="description" content="URSUS es el software POS más ágil y potente para gestionar ventas, inventario en tiempo real, arqueo de caja y clientes. Rápido, intuitivo y accesible desde cualquier dispositivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/ursus-logo.png">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ NAV ══════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+        <a href="#" class="nav-logo">
+            <div class="logo-icon">
+                <img src="assets/img/ursus-logo.png" alt="URSUS Logo">
+            </div>
+            <span>URSUS</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#features">Características</a></li>
+            <li><a href="#screenshots">Punto de Venta</a></li>
+            <li><a href="#how">Cómo funciona</a></li>
+            <li><a href="#pricing">Precios</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://ursus-txd9.onrender.com/login" class="btn btn-ghost" target="_blank" rel="noopener">Iniciar sesión</a>
+            <a href="#contact" class="btn btn-primary">Solicitar demo</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════ HERO ═════════════════════════════════ -->
+<section class="hero" id="hero">
+    <!-- Glow orbs de fondo -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <!-- Grid lines decorativas -->
+    <div class="grid-overlay"></div>
+
+    <div class="container hero-content">
+        <div class="badge animate-fade-up">
+            <span class="badge-dot"></span>
+            Sistema POS & Facturación en Tiempo Real
+        </div>
+
+        <h1 class="hero-title animate-fade-up delay-1">
+            El POS que hace crecer<br>
+            <span class="gradient-text">tu negocio</span>
+        </h1>
+
+        <p class="hero-subtitle animate-fade-up delay-2">
+            URSUS centraliza tus ventas, inventario en tiempo real, control diario de caja y clientes en una sola plataforma ultrarrápida. Diseñado para que cobres en segundos y tengas control total de tu comercio.
+        </p>
+
+        <div class="hero-actions animate-fade-up delay-3">
+            <a href="#contact" class="btn btn-primary btn-lg">
+                <span>Solicitar demo gratis</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#screenshots" class="btn btn-outline btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21"/></svg>
+                Ver en acción
+            </a>
+        </div>
+
+        <div class="hero-stats animate-fade-up delay-4">
+            <div class="stat">
+                <span class="stat-number">&lt; 2s</span>
+                <span class="stat-label">Por transacción en caja</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Inventario en tiempo real</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">99.9%</span>
+                <span class="stat-label">Disponibilidad en mostrador</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image animate-fade-up delay-4">
+        <div class="container">
+            <div class="hero-img-wrapper">
+                <div class="screen-glow"></div>
+                <img src="assets/img/screen_dashboard.png" alt="URSUS Dashboard" class="hero-screenshot">
+                <!-- Floating cards con iconos del sistema -->
+                <div class="float-card float-card-1">
+                    <span class="float-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </span>
+                    <div>
+                        <p class="float-value">$2.840.000</p>
+                        <p class="float-label">Ventas del turno</p>
+                    </div>
+                </div>
+                <div class="float-card float-card-2">
+                    <span class="float-icon float-icon-emerald">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </span>
+                    <div>
+                        <p class="float-value">Caja Abierta</p>
+                        <p class="float-label">Arqueo en tiempo real</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ LOGOS / SOCIAL PROOF ═════════════════════════ -->
+<section class="social-proof">
+    <div class="container">
+        <p class="proof-label">Diseñado para la exigencia del comercio moderno</p>
+        <div class="proof-logos">
+            <div class="proof-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg>
+                <span>Comercio & Retail</span>
+            </div>
+            <div class="proof-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                <span>Cafeterías & Panaderías</span>
+            </div>
+            <div class="proof-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2v6a3 3 0 0 1-3 3 3 3 0 0 1-3-3V2"/><path d="M15 2v14a2 2 0 0 1-2 2h-1"/><path d="M18 11v9a2 2 0 0 1-2 2h-1"/><path d="M8 2v14a2 2 0 0 0 2 2h1"/><path d="M5 2v4a3 3 0 0 0 3 3v13"/></svg>
+                <span>Restaurantes & Gastro</span>
+            </div>
+            <div class="proof-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+                <span>Droguerías & Salud</span>
+            </div>
+            <div class="proof-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Moda & Calzado</span>
+            </div>
+            <div class="proof-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span>Supermercados & Minimarkets</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════ FEATURES ════════════════════════════════ -->
+<section class="features section" id="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Características</span>
+            <h2 class="section-title">Todo lo que tu negocio necesita para vender más</h2>
+            <p class="section-subtitle">
+                Una plataforma unificada diseñada para que cobres más rápido, controles tus existencias y supervises tus ingresos en todo momento.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <!-- 1. Feature Principal: POS -->
+            <div class="feature-card feature-large reveal">
+                <div class="feature-icon-wrap" style="--c: #0ea5e9;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </span>
+                </div>
+                <h3>Punto de Venta ultra rápido</h3>
+                <p>Interfaz SPA de alto rendimiento sin recargas. Busca productos al instante por nombre o pistola lectora de código de barras, agrega al carrito y factura en menos de 2 segundos.</p>
+                <ul class="feature-list">
+                    <li>Búsqueda en milisegundos y soporte de lectores de código de barras</li>
+                    <li>Múltiples métodos de pago: Efectivo, Tarjetas y Transferencias</li>
+                    <li>Cálculo exacto de cambio y cobro rápido en un clic</li>
+                    <li>Registro ágil de nuevos clientes sin abandonar la pantalla de venta</li>
+                </ul>
+            </div>
+
+            <!-- 2. Arqueo y Control de Caja -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #10b981;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </span>
+                </div>
+                <h3>Control Diario y Arqueo de Caja</h3>
+                <p>Apertura con base inicial en efectivo, monitoreo en tiempo real del dinero esperado en gaveta y cierre Z de turno con arqueo para evitar descuadres.</p>
+            </div>
+
+            <!-- 3. Inventario Multisucursal -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #8b5cf6;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 9.4 7.55 4.24"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/></svg>
+                    </span>
+                </div>
+                <h3>Inventario en tiempo real</h3>
+                <p>El stock se descuenta automáticamente con cada ticket. Alertas tempranas de stock mínimo, costos, precios y traslados entre sucursales.</p>
+            </div>
+
+            <!-- 4. Carga Masiva CSV -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #06b6d4;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>
+                    </span>
+                </div>
+                <h3>Carga Masiva Excel / CSV</h3>
+                <p>Crea o actualiza cientos de productos, inventario y clientes en segundos con simulación previa en pantalla (Dry-Run) sin riesgo de errores.</p>
+            </div>
+
+            <!-- 5. Clientes y CRM -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #f59e0b;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </span>
+                </div>
+                <h3>Directorio y CRM de Clientes</h3>
+                <p>Historial completo de compras por cliente, identificación fiscal por Cédula o NIT para facturación y fidelización en el punto de venta.</p>
+            </div>
+
+            <!-- 6. Facturación Electrónica DIAN & Tickets -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #ec4899;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg>
+                    </span>
+                </div>
+                <h3>Facturación DIAN & Tirilla Térmica</h3>
+                <p>Generación de facturas electrónicas con código QR, validación CUFE UBL 2.1 e impresión rápida para impresoras térmicas POS o formato carta.</p>
+            </div>
+
+            <!-- 7. Roles y Seguridad Granular -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #ef4444;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </span>
+                </div>
+                <h3>Roles y Permisos Granulares</h3>
+                <p>Controla con precisión quién puede abrir o cerrar caja, aplicar descuentos, editar productos o ver reportes. Perfiles para administradores y cajeros.</p>
+            </div>
+
+            <!-- 8. Dashboard y Reportes -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-wrap" style="--c: #14b8a6;">
+                    <span class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+                    </span>
+                </div>
+                <h3>Dashboard y Analíticas</h3>
+                <p>Métricas clave en vivo: total facturado en el día, ticket promedio, productos estrella más vendidos y balance financiero del negocio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════ SCREENSHOTS ═══════════════════════════════ -->
+<section class="screenshots section" id="screenshots">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Capturas del sistema</span>
+            <h2 class="section-title">Diseñado para operar a máxima velocidad</h2>
+            <p class="section-subtitle">Una interfaz oscura, moderna y sin distracciones que optimiza el flujo en caja y enamora a tu equipo de trabajo.</p>
+        </div>
+
+        <div class="tabs-wrapper">
+            <div class="tabs" id="tabs">
+                <button class="tab active" data-tab="0">Dashboard</button>
+                <button class="tab" data-tab="1">Punto de Venta</button>
+                <button class="tab" data-tab="2">Productos e Inventario</button>
+                <button class="tab" data-tab="3">Clientes</button>
+            </div>
+        </div>
+
+        <div class="tab-panels">
+            <!-- Panel 0: Dashboard -->
+            <div class="tab-panel active" data-panel="0">
+                <div class="screenshot-wrapper reveal">
+                    <img src="assets/img/screen_dashboard.png" alt="Dashboard URSUS" class="screenshot-img">
+                    <div class="screenshot-caption">
+                        <strong>Dashboard principal</strong> — KPIs del negocio en tiempo real, ventas del día y estado de caja
+                    </div>
+                </div>
+            </div>
+            <!-- Panel 1: POS -->
+            <div class="tab-panel" data-panel="1">
+                <div class="screenshot-wrapper reveal">
+                    <img src="assets/img/screen_pos.png" alt="POS URSUS" class="screenshot-img">
+                    <div class="screenshot-caption">
+                        <strong>Terminal Punto de Venta</strong> — Catálogo interactivo, carrito rápido y liquidación en menos de 2 segundos
+                    </div>
+                </div>
+            </div>
+            <!-- Panel 2: Productos -->
+            <div class="tab-panel" data-panel="2">
+                <div class="screenshot-wrapper reveal">
+                    <img src="assets/img/screen_productos.png" alt="Productos URSUS" class="screenshot-img">
+                    <div class="screenshot-caption">
+                        <strong>Catálogo de productos</strong> — Control de existencias por sucursal, alertas de stock e importación CSV
+                    </div>
+                </div>
+            </div>
+            <!-- Panel 3: Clientes -->
+            <div class="tab-panel" data-panel="3">
+                <div class="screenshot-wrapper reveal">
+                    <img src="assets/img/screen_clientes.png" alt="Clientes URSUS" class="screenshot-img">
+                    <div class="screenshot-caption">
+                        <strong>Directorio de clientes</strong> — Historial de compras, datos fiscales para facturación y búsqueda instantánea
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════ HOW IT WORKS ══════════════════════════════ -->
+<section class="how section" id="how">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Cómo funciona</span>
+            <h2 class="section-title">Empieza a vender en minutos</h2>
+            <p class="section-subtitle">Sin instalaciones complejas ni servidores locales que mantener. Solo accede desde tu navegador y vende.</p>
+        </div>
+
+        <div class="steps">
+            <div class="step reveal">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg>
+                </div>
+                <div class="step-content">
+                    <h3>Configuras tu negocio</h3>
+                    <p>Ingresa el nombre comercial de tu negocio, define tus sucursales y estaciones de caja. Tu cuenta queda lista al instante con perfiles de prueba.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step reveal">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>
+                </div>
+                <div class="step-content">
+                    <h3>Cargas tus productos y clientes</h3>
+                    <p>Importa tu inventario masivamente desde Excel/CSV con un solo clic o agrega tus productos con código de barras, precio de costo y venta.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step reveal">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                </div>
+                <div class="step-content">
+                    <h3>¡Abre caja y empieza a vender!</h3>
+                    <p>Tus cajeros abren turno, cobran a toda velocidad y el inventario, arqueos de caja y reportes financieros se sincronizan en vivo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════ PRICING ═══════════════════════════════ -->
+<section class="pricing section" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Precios</span>
+            <h2 class="section-title">Simple y transparente</h2>
+            <p class="section-subtitle">Planes adaptados a tu negocio. Todo lo que requieres para operar sin costos ocultos ni complicaciones.</p>
+        </div>
+
+        <!-- Toggle COP / USD -->
+        <div class="currency-toggle-wrap">
+            <span class="currency-label" id="label-cop">COP</span>
+            <button class="currency-toggle" id="currency-toggle" role="switch" aria-checked="false" title="Cambiar moneda">
+                <span class="toggle-thumb"></span>
+            </button>
+            <span class="currency-label" id="label-usd">USD</span>
+        </div>
+
+        <div class="pricing-grid pricing-grid-2">
+
+            <!-- Plan Básico / Punto de Venta -->
+            <div class="pricing-card pricing-featured reveal">
+                <div class="plan-badge">Más popular</div>
+                <div class="plan-name">Punto de Venta</div>
+                <div class="plan-price">
+                    <!-- COP -->
+                    <div class="price-cop">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">199.000</span>
+                        <span class="price-period">COP/mes</span>
+                    </div>
+                    <!-- USD -->
+                    <div class="price-usd hidden">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">49</span>
+                        <span class="price-period">USD/mo</span>
+                    </div>
+                </div>
+                <p class="plan-desc">Para negocios y comercios con 1 o 2 puntos de venta. Todo lo esencial para vender, controlar inventario y cuadrar caja desde el primer día.</p>
+
+                <div class="plan-divider"></div>
+
+                <p class="plan-section-label">Capacidad operativa</p>
+                <ul class="plan-features">
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Tu empresa comercial</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Hasta 2 sucursales / puntos de venta</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Hasta 5 usuarios (Cajeros, Supervisores, Admin)</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Control diario de apertura y cierre de caja</li>
+                </ul>
+
+                <p class="plan-section-label">Módulos incluidos</p>
+                <ul class="plan-features">
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Terminal Punto de Venta (POS) ultrarrápido</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Inventario en tiempo real con alertas de stock</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Directorio y CRM de clientes</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Carga masiva de catálogo vía Excel/CSV</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Historial completo de ventas y tickets</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Dashboard de ventas del día</li>
+                    <li class="muted"><span>—</span> Facturación Electrónica DIAN</li>
+                    <li class="muted"><span>—</span> Traslados entre múltiples sedes</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary btn-full">Solicitar demo</a>
+            </div>
+
+            <!-- Plan Pro / A medida -->
+            <div class="pricing-card reveal">
+                <div class="plan-name">Pro / A medida</div>
+                <div class="plan-price">
+                    <span class="price-custom">Cotización<br>personalizada</span>
+                </div>
+                <p class="plan-desc">Para negocios en expansión, múltiples sucursales o empresas que requieren facturación electrónica integrada y analíticas avanzadas.</p>
+
+                <div class="plan-divider"></div>
+
+                <p class="plan-section-label">Capacidad operativa</p>
+                <ul class="plan-features">
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Tu empresa comercial</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sucursales y cajas según necesidad</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Usuarios y cajeros ilimitados</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Permisos y seguridad avanzada</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Soporte prioritario y capacitación</li>
+                </ul>
+
+                <p class="plan-section-label">Módulos incluidos</p>
+                <ul class="plan-features">
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Todo lo incluido en el Plan Punto de Venta</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Facturación Electrónica DIAN (UBL 2.1, CUFE y QR)</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Traslados y sincronización entre sedes</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Reportes financieros y exportación contable</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Módulos adicionales a medida</li>
+                    <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Integraciones API personalizadas</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline btn-full">Contactar ventas</a>
+            </div>
+
+        </div>
+
+        <!-- Nota de IVA -->
+        <p class="pricing-note">* Precios no incluyen IVA. Facturación mensual o anual con 15% de descuento adicional.</p>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════ CTA ═══════════════════════════════════ -->
+<section class="cta section" id="contact">
+    <div class="container">
+        <div class="cta-box reveal">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+            <div class="cta-content">
+                <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
+                <p>Solicita una demostración guiada y te mostramos cómo URSUS acelera tus ventas y organiza tu inventario en minutos.</p>
+                <form class="cta-form" id="cta-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Tu nombre o empresa" class="form-input" required>
+                        <input type="email" placeholder="Tu correo electrónico" class="form-input" required>
+                        <input type="tel" placeholder="WhatsApp / Teléfono" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <span>Solicitar demo gratis</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <p class="form-disclaimer">Sin compromiso. Te contactamos en menos de 24 horas hábiles.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">
+                    <div class="logo-icon logo-icon-sm">
+                        <img src="assets/img/ursus-logo.png" alt="URSUS">
+                    </div>
+                    <span>URSUS</span>
+                </a>
+                <p>Software POS y facturación ágil diseñado para negocios modernos que buscan vender más rápido, controlar su caja y maximizar su rentabilidad.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/" target="_blank" rel="noopener" class="social-link" title="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.096.546 4.066 1.503 5.773L0 24l6.395-1.479C8.055 23.445 9.98 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.861 0-3.601-.497-5.102-1.361l-.366-.213-3.795.877.905-3.695-.24-.38A9.939 9.939 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+                    </a>
+                    <a href="mailto:contacto@ursus.com" class="social-link" title="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Producto</h4>
+                    <a href="#features">Características</a>
+                    <a href="#pricing">Precios</a>
+                    <a href="#screenshots">Punto de Venta</a>
+                    <a href="https://ursus-txd9.onrender.com/login" target="_blank" rel="noopener">Demo en vivo</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Módulos</h4>
+                    <a href="#features">Terminal POS</a>
+                    <a href="#features">Arqueo de Caja</a>
+                    <a href="#features">Inventario & Stock</a>
+                    <a href="#features">Facturación DIAN</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <a href="#contact">Solicitar demo</a>
+                    <a href="#contact">Contacto comercial</a>
+                    <a href="#">Términos del servicio</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 URSUS POS. Todos los derechos reservados.</p>
+            <p>Desarrollado con precisión industrial para el comercio moderno.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
